@@ -29,8 +29,7 @@ A mobile-friendly note-taking application built with **React Native** and **Expo
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
-   cd NoteTakingAppMobileVersion
+   git clone https://github.com/kylehadam/NoteTakingAppMobileVersion.git
    ```
 
 2. **Install Dependencies**
