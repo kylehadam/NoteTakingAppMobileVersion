@@ -17,7 +17,6 @@ export default function App() {
           screenOptions={({ route }) => ({
             tabBarIcon: ({ focused, color, size }) => {
               let iconName;
-
               if (route.name === 'Home') {
                 iconName = focused ? 'home' : 'home-outline';
               } else if (route.name === 'Notes') {
@@ -25,7 +24,6 @@ export default function App() {
               } else if (route.name === 'AddNote') {
                 iconName = focused ? 'add-circle' : 'add-circle-outline';
               }
-
               return <Ionicons name={iconName} size={size} color={color} />;
             },
             tabBarActiveTintColor: 'tomato',
@@ -34,7 +32,7 @@ export default function App() {
         >
           <Tab.Screen name="Home" component={HomeScreen} />
           <Tab.Screen name="Notes" component={NoteScreen} />
-          <Tab.Screen name="AddNote" component={AddNoteScreen} />
+          <Tab.Screen name="AddNote" component={AddNoteScreen} options={{ title: 'Add a Note' }} />
         </Tab.Navigator>
       </NavigationContainer>
     </NotesProvider>
